@@ -1,8 +1,14 @@
 import fs from 'fs/promises';
 
+import directoryChecker from 'directory_checker';
+
 export default async function (filename, data) {
   const saveDir = './jsonFiles';
-  await fs.mkdir(saveDir, { recursive: true }).catch(console.error);
+  const directoryExists = await directoryChecker(saveDir);
+
+  if (!directoryExists) {
+    await fs.mkdir(saveDir);
+  }
 
   const appendedDir = `${saveDir}/${filename}.json`;
   await fs.writeFile(appendedDir, JSON.stringify(data, null, 2));

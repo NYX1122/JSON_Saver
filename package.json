@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/NYX1122/JSON_Saver/issues"
   },
-  "homepage": "https://github.com/NYX1122/JSON_Saver#readme"
+  "homepage": "https://github.com/NYX1122/JSON_Saver#readme",
+  "dependencies": {
+    "directory_checker": "file:../Directory_Checker"
+  }
 }
