@@ -1,0 +1,20 @@
+{
+  "name": "json_saver",
+  "version": "1.0.0",
+  "description": "Saves JavaScript objects to a .JSON file in a jsonFiles folder at the root.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "node appTester.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NYX1122/JSON_Saver.git"
+  },
+  "author": "BoDee Angus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NYX1122/JSON_Saver/issues"
+  },
+  "homepage": "https://github.com/NYX1122/JSON_Saver#readme"
+}
